@@ -1,0 +1,26 @@
+{
+ "name": "meshaid-android",
+ "version": "0.1.0",
+ "private": true,
+ "main": "index.js",
+ "scripts": {
+  "start": "expo start --dev-client",
+  "android": "expo run:android",
+  "prebuild": "expo prebuild --platform android",
+  "export:check": "expo export --platform android"
+ },
+ "dependencies": {
+  "@mesh/core": "file:../../packages/core",
+  "@reduxjs/toolkit": "^2.11.2",
+  "expo": "~55.0.31",
+  "expo-modules-core": "~55.0.26",
+  "react": "19.2.0",
+  "react-native": "^0.83.10",
+  "react-redux": "^9.2.0"
+ },
+ "expo": {
+  "autolinking": {
+   "nativeModulesDir": "./modules"
+  }
+ }
+}
